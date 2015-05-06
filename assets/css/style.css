@@ -183,3 +183,22 @@ ul.dropdown-menu>li>a>i.fa {
     width: 1.3em;
 }
 
+.has-pullquote:before {
+    /* Reset metrics. */
+    padding: 0;
+    border: none;
+    
+    /* Content */
+    content: attr(data-pullquote);
+    
+    /* Pull out to the right, modular scale based margins. */
+    float: right;
+    width: 45%;
+    margin: 1em 0 1em 1.5em;
+    
+    /* Baseline correction */
+    position: relative;
+    top: 6px;
+    font-size: 1.4em;
+    line-height: 1.45em;
+}
